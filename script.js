@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Feitas com uma massa crocante e envoltas em uma camada generosa de chocolate, as bolachas ferradura são a combinação perfeita de crocância e cremosidade. Um prazer para os amantes de chocolate!"
         },
         {
-            name: "Bolacha de natal KG",
+            name: "Bolacha de pintada KG",
             price: 45.00,
             image: "placeholder-produto-3.jpg",
             description: "Com um toque especial de especiarias natalinas, nossas bolachas de Natal trazem todo o sabor e a magia da temporada. Envolva-se no espírito das festas com cada mordida!"
@@ -88,3 +88,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Inicia a renderização dos produtos ao carregar a página
     renderProducts();
 });
+
