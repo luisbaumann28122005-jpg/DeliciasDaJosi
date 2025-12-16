@@ -1,47 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
     // ** IMPORTANTE: Substitua '5511999999999' pelo seu número de WhatsApp, incluindo o código do país (55) e o DDD. **
-    const whatsappNumber = '5511999999999'; 
+    const whatsappNumber = '554796062342'; 
     const productGrid = document.querySelector('.product-grid');
 
     // ** DADOS DOS PRODUTOS - EDITE APENAS ESTA SEÇÃO PARA GERENCIAR SEUS PRODUTOS **
     // Para adicionar um novo produto, copie e cole um bloco de produto (entre as chaves {})
     const products = [
         {
-            name: "Produto Exclusivo 1",
-            price: 99.90,
+            name: "Bolacha Amanteigada Kg",
+            price: 34.00,
             image: "placeholder-produto-1.jpg", // Substitua pelo caminho da sua imagem
-            description: "Descrição breve do Produto Exclusivo 1. Fale conosco para mais detalhes!"
+            description: "Deliciosas e macias, nossas bolachas amanteigadas derretem na boca, proporcionando um sabor suave e irresistível. Perfeitas para qualquer hora do dia!"
         },
         {
-            name: "Produto Premium 2",
-            price: 149.90,
+            name: "Bolacha ferradura com chocolate kg",
+            price: 38.00,
             image: "placeholder-produto-2.jpg",
-            description: "Descrição breve do Produto Premium 2. Um item de alta qualidade."
+            description: "Feitas com uma massa crocante e envoltas em uma camada generosa de chocolate, as bolachas ferradura são a combinação perfeita de crocância e cremosidade. Um prazer para os amantes de chocolate!"
         },
         {
-            name: "Produto Essencial 3",
-            price: 49.90,
+            name: "Bolacha de natal KG",
+            price: 45.00,
             image: "placeholder-produto-3.jpg",
-            description: "Descrição breve do Produto Essencial 3. Perfeito para o dia a dia."
+            description: "Com um toque especial de especiarias natalinas, nossas bolachas de Natal trazem todo o sabor e a magia da temporada. Envolva-se no espírito das festas com cada mordida!"
         },
-        {
-            name: "Produto Essencial 4",
-            price: 49.90,
-            image: "placeholder-produto-3.jpg",
-            description: "Descrição breve do Produto Essencial 3. Perfeito para o dia a dia."
-        },
-        {
-            name: "Produto Essencial 5",
-            price: 49.90,
-            image: "placeholder-produto-3.jpg",
-            description: "Descrição breve do Produto Essencial 3. Perfeito para o dia a dia."
-        },
-        {
-            name: "Produto Essencial 6",
-            price: 49.90,
-            image: "placeholder-produto-3.jpg",
-            description: "Descrição breve do Produto Essencial 3. Perfeito para o dia a dia."
-        }
         // Adicione mais produtos aqui seguindo o mesmo formato
     ];
 
