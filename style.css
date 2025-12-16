@@ -1,0 +1,269 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Paleta de Cores em Tons de Rosa */
+:root {
+    --primary-color: #FF69B4; /* Rosa Choque/Pink - Cor principal */
+    --secondary-color: #FFC0CB; /* Rosa Claro - Para fundos e destaques suaves */
+    --accent-color: #C71585; /* Rosa Escuro/Violeta - Para hover e detalhes */
+    --text-dark: #333333;
+    --text-light: #ffffff;
+    --background-light: #f9f9f9;
+    --whatsapp-color: #25d366;
+    --whatsapp-hover: #128c7e;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Botões */
+.btn-primary, .btn-whatsapp, .btn-whatsapp-large {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 25px; /* Botões mais arredondados */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.btn-whatsapp, .btn-whatsapp-large {
+    background-color: var(--whatsapp-color);
+    color: var(--text-light);
+    font-size: 16px;
+}
+
+.btn-whatsapp:hover, .btn-whatsapp-large:hover {
+    background-color: var(--whatsapp-hover);
+    transform: translateY(-2px);
+}
+
+.btn-whatsapp i, .btn-whatsapp-large i {
+    margin-right: 8px;
+}
+
+/* Header e Navegação */
+header {
+    background-color: var(--text-light);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 900;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Seções Gerais */
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+#produtos {
+    background-color: var(--secondary-color); /* Fundo rosa claro para a seção de produtos */
+}
+
+h2 {
+    font-size: 2.8em;
+    margin-bottom: 40px;
+    color: var(--accent-color);
+    text-transform: uppercase;
+}
+
+/* Seção Hero (Home) */
+.hero {
+    background: linear-gradient(rgba(255, 105, 180, 0.7), rgba(199, 21, 133, 0.7)), url('hero-background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 120px 0;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+
+/* Seção Produtos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background-color: var(--text-light);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 3px solid var(--secondary-color);
+}
+
+.product-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.product-card .price {
+    font-size: 1.6em;
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-card .description {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+    min-height: 40px; /* Garante que a altura seja consistente */
+}
+
+/* Seção Sobre Mim e Contato */
+.about, .contact {
+    text-align: left;
+}
+
+.about p, .contact p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: var(--text-dark);
+}
+
+.contact {
+    padding-bottom: 80px;
+}
+
+.btn-whatsapp-large {
+    font-size: 1.6em;
+    padding: 18px 35px;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    padding: 25px 0;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.8em;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .about, .contact {
+        text-align: center;
+    }
+}
